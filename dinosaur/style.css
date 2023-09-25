@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+.wrapper{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:180px auto;
+    position: relative;
+}
+.dino{
+    height: 70px;
+    width: 70px;
+
+    background-image: url(./assets//dinosaur.jpg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+ 
+    position: absolute;
+    top: 158px;
+    left: 20px;
+}
+.cactus{
+    height: 40px;
+    width: 35px;
+
+    background-image: url(./assets/kaktus.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+ 
+    position: absolute;
+    top: 159px;
+    right: 0;
+
+    animation: cactus 2.5s infinite linear;
+}
+.number{
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+    font-size: 18px;
+}
+
+.sakra{
+    animation: 0.5s dinosaur  ;
+}
+@keyframes cactus{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 105%;
+    }
+}
+
+@keyframes dinosaur{
+    0%{
+        top: 158px;
+    }
+    30%{
+        top: 120px;
+    }
+    50%{
+        top: 90px;
+    }
+    70%{
+        top: 120px;
+    }
+    100%{
+        top: 158px;
+    }
+}
