@@ -19,10 +19,7 @@ document.addEventListener("keydown", () => {
 
 setInterval(() => {
   let dinoTop = parseInt(getComputedStyle(dino).getPropertyValue("top"));
-//   let dinoL = getComputedStyle(dino).getPropertyValue("left");
   let cactusLeft = parseInt( getComputedStyle(cactus).getPropertyValue("left")) ;
-//   let cactusTop = getComputedStyle(cactus).getPropertyValue("top");
-//   console.log(parseInt(dinoTop), cactusTop);
 if (dinoTop >=100 && cactusLeft <= 22 && cactusLeft>=0 ) {
     gameOver.innerText = 'Game Over'
 }
